@@ -48,26 +48,34 @@ export default function Page() {
       <main>
         {/* ヒーローセクション */}
         <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-green-50 to-yellow-50">
-          <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+          <div className="absolute inset-0 w-full h-full">
+            <img
+              src={mainVisual}
+              alt="背景画像"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
+          </div>
+          <div className="container relative mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 space-y-6 text-center md:text-left">
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-800">
+              <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
                 徳島の魅力を伝える
                 <br />
                 ゆるキャラ、
                 <br />
-                <span className="text-green-600">ダー・チースー！</span>
+                <span className="text-green-400">ダー・チースー！</span>
               </h1>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-white drop-shadow-lg">
                 すだちの爽やかさとチーズのまろやかさが
                 <br />
                 出会った、徳島生まれのゆるキャラです
               </p>
             </div>
-            <div className="md:w-1/2 mt-8 md:mt-0">
+            <div className="md:w-1/2 mt-8 md:mt-0 relative z-10">
               <img
                 src={mainVisual}
                 alt="ダー・チースーのメインビジュアル"
-                className="w-full h-auto max-w-md mx-auto"
+                className="w-full h-auto max-w-md mx-auto drop-shadow-2xl"
               />
             </div>
           </div>
