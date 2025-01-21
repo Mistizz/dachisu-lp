@@ -56,8 +56,8 @@ export default function Page() {
             />
             <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
           </div>
-          <div className="container relative mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-            <div className="md:w-1/2 space-y-6 text-center md:text-left">
+          <div className="container relative mx-auto px-4">
+            <div className="max-w-2xl space-y-6 text-center">
               <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
                 徳島の魅力を伝える
                 <br />
@@ -70,13 +70,6 @@ export default function Page() {
                 <br />
                 出会った、徳島生まれのゆるキャラです
               </p>
-            </div>
-            <div className="md:w-1/2 mt-8 md:mt-0 relative z-10">
-              <img
-                src={mainVisual}
-                alt="ダー・チースーのメインビジュアル"
-                className="w-full h-auto max-w-md mx-auto drop-shadow-2xl"
-              />
             </div>
           </div>
         </section>
