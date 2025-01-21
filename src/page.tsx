@@ -1,5 +1,3 @@
-import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Instagram, Facebook, Twitter, MapPin, Menu } from "lucide-react"
 import logo from "@/assets/images/logo.webp"
@@ -19,28 +17,26 @@ export default function Page() {
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <Image
+            <a href="/" className="flex items-center space-x-2">
+              <img
                 src={logo}
                 alt="ダー・チースーのロゴ"
-                width={120}
-                height={40}
                 className="w-auto h-8"
               />
-            </Link>
+            </a>
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#about" className="text-gray-700 hover:text-green-600 transition-colors">
+              <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors">
                 ダー・チースーとは
-              </Link>
-              <Link href="#products" className="text-gray-700 hover:text-green-600 transition-colors">
+              </a>
+              <a href="#products" className="text-gray-700 hover:text-green-600 transition-colors">
                 特産品紹介
-              </Link>
-              <Link href="#gallery" className="text-gray-700 hover:text-green-600 transition-colors">
+              </a>
+              <a href="#gallery" className="text-gray-700 hover:text-green-600 transition-colors">
                 ギャラリー
-              </Link>
-              <Link href="#access" className="text-gray-700 hover:text-green-600 transition-colors">
+              </a>
+              <a href="#access" className="text-gray-700 hover:text-green-600 transition-colors">
                 アクセス
-              </Link>
+              </a>
             </nav>
             <Button variant="ghost" className="md:hidden">
               <Menu className="h-6 w-6" />
@@ -68,11 +64,9 @@ export default function Page() {
               </p>
             </div>
             <div className="md:w-1/2 mt-8 md:mt-0">
-              <Image
+              <img
                 src={mainVisual}
                 alt="ダー・チースーのメインビジュアル"
-                width={500}
-                height={500}
                 className="w-full h-auto max-w-md mx-auto"
               />
             </div>
@@ -85,11 +79,9 @@ export default function Page() {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">ダー・チースーのプロフィール</h2>
             <div className="flex flex-col md:flex-row items-center justify-between gap-12">
               <div className="md:w-1/2">
-                <Image
+                <img
                   src={keyVisual}
                   alt="ダー・チースーの全身イラスト"
-                  width={400}
-                  height={400}
                   className="w-full h-auto max-w-md mx-auto"
                 />
               </div>
@@ -121,11 +113,9 @@ export default function Page() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-                <Image
+                <img
                   src={product1}
                   alt="特産品1"
-                  width={400}
-                  height={300}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
@@ -134,11 +124,9 @@ export default function Page() {
                 </div>
               </div>
               <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-                <Image
+                <img
                   src={product2}
                   alt="特産品2"
-                  width={400}
-                  height={300}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
@@ -147,11 +135,9 @@ export default function Page() {
                 </div>
               </div>
               <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-                <Image
+                <img
                   src={product3}
                   alt="特産品3"
-                  width={400}
-                  height={300}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
@@ -169,11 +155,9 @@ export default function Page() {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">ダー・チースーの活動写真</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="relative group">
-                <Image
+                <img
                   src={gallery1}
                   alt="イベント参加"
-                  width={400}
-                  height={400}
                   className="w-full h-64 object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
@@ -181,11 +165,9 @@ export default function Page() {
                 </div>
               </div>
               <div className="relative group">
-                <Image
+                <img
                   src={gallery2}
                   alt="地域交流"
-                  width={400}
-                  height={400}
                   className="w-full h-64 object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
@@ -193,11 +175,9 @@ export default function Page() {
                 </div>
               </div>
               <div className="relative group">
-                <Image
+                <img
                   src={gallery3}
                   alt="プロモーション活動"
-                  width={400}
-                  height={400}
                   className="w-full h-64 object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
@@ -232,11 +212,9 @@ export default function Page() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center md:text-left">
-              <Image
+              <img
                 src={logo}
                 alt="ダー・チースーのロゴ"
-                width={120}
-                height={40}
                 className="w-auto h-8 mx-auto md:mx-0 mb-4"
               />
               <p className="text-sm text-gray-400">© 2025 ダー・チースー公式サイト</p>
@@ -245,34 +223,34 @@ export default function Page() {
               <h3 className="font-bold mb-4">リンク</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
                     プライバシーポリシー
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
                     利用規約
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
                     お問い合わせ
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
             <div className="text-center md:text-right">
               <h3 className="font-bold mb-4">SNS</h3>
               <div className="flex justify-center md:justify-end space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
                   <Twitter className="h-6 w-6" />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
                   <Facebook className="h-6 w-6" />
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
                   <Instagram className="h-6 w-6" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
